@@ -1,4 +1,6 @@
 @use "./components/header";
+@use "./components/leader";
+@use "./mixins/" as *;
 
 :root {
   --color-white: hsl(0, 0%, 100%);
@@ -44,4 +46,8 @@ h3 {
 input,
 button {
   font: inherit;
+}
+
+main {
+  @include constrain;
 }
