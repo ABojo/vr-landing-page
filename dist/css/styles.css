@@ -1,0 +1,39 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-gray-1: hsl(0, 0%, 55%);
+  --color-gray-2: hsl(0, 0%, 41%);
+  --ff-heading: "Josefin Sans", sans-serif;
+  --ff-body: "Alata", sans-serif;
+  --fw-heading: 300;
+  --fw-body: 400;
+  --fs-1: 0.9375rem;
+  --fs-2: 2rem;
+  --fs-3: 3rem;
+  --fs-4: 4.5rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-heading);
+}
+
+input,
+button {
+  font: inherit;
+}
