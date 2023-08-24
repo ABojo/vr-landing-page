@@ -18,20 +18,6 @@
     margin-bottom: 8rem;
   }
 
-  &__nav {
-  }
-
-  &__list {
-    display: flex;
-    list-style-type: none;
-    gap: 1.75rem;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: var(--color-white);
-  }
-
   &__heading {
     text-transform: uppercase;
     font-size: var(--fs-4);
