@@ -12,7 +12,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/mobile/image-hero.jpg");
   }
 
-  nav {
+  .nav {
     @media (max-width: $bp-2) {
       display: none;
     }
@@ -27,6 +27,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8rem;
+    z-index: 3;
+    position: relative;
   }
 
   &__heading {
