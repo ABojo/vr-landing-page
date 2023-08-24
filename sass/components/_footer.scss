@@ -1,0 +1,41 @@
+@use "../mixins/" as *;
+
+.footer {
+  background-color: var(--color-black);
+  padding-block: 3rem;
+
+  &__container {
+    @include constrain;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  &__logo {
+    width: 9rem;
+  }
+
+  &__socials {
+    justify-self: end;
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+  }
+
+  &__social {
+    a {
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+      &:hover {
+        border-bottom: 2px solid var(--color-white);
+      }
+    }
+  }
+
+  &__copyright {
+    justify-self: end;
+    color: var(--color-gray-2);
+    font-size: var(--fs-1);
+  }
+}
