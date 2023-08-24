@@ -4,6 +4,7 @@
 @use "./components/creations";
 @use "./components/footer";
 @use "./mixins/" as *;
+@use "./utils/breakpoints" as *;
 
 :root {
   --color-white: hsl(0, 0%, 100%);
@@ -24,6 +25,16 @@
 
   --layout-max-width: 69rem;
   --layout-width: 90%;
+
+  @media (max-width: $bp-3) {
+    --fs-2: 1.5rem;
+    --fs-3: 2rem;
+    --fs-4: 3rem;
+  }
+
+  @media (max-width: $bp-4) {
+    --fs-4: 2.5rem;
+  }
 }
 
 *,
